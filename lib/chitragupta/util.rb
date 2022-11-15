@@ -11,7 +11,7 @@ module Chitragupta
       data[:log][:level] = log_level
       data[:meta][:timestamp] = timestamp
 
-      return "#{data.to_json.to_s}\n"
+      return "#{data.to_json}\n"
     end
 
     def called_as_rails_server?
